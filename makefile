@@ -5,7 +5,7 @@ CFLAGS = -c $(DEBUG)
 LFLAGS = $(DEBUG)
 
 assign1 : $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) squareMatrix.h -o assign1
+	$(CC) $(LFLAGS) $(OBJS) squareMatrix.h -o program
 	
 Source.o : BreadthFirstSearch.h DepthFirstSearch.h DepthFirstSearchWithArray.h UninformedSearchSolution.h UniformCostSearch.h
 	$(CC) $(CFLAGS) Source.cpp
@@ -29,4 +29,4 @@ squareMatrix.o : squareMatrix.h
 	$(CC) $(CFLAGS) squareMatrix.h
 
 clean:
-	\rm *.o *~ p1
+	\rm *.o program
